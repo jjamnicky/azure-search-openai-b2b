@@ -2,6 +2,8 @@ import { Outlet, NavLink, Link } from "react-router-dom";
 
 import github from "../../assets/github.svg";
 
+import telekom from "../../assets/T-logo.svg";
+
 import styles from "./Layout.module.css";
 
 const Layout = () => {
@@ -14,6 +16,18 @@ const Layout = () => {
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
+                            <li>
+                                <a href="https://moja-firma.telekom.sk/" target={"_blank"} title="B2B SK Telekom link">
+                                    <img
+                                        src={telekom}
+                                        alt="Telekom Logo"
+                                        aria-label="B2B SK Telekom link"
+                                        width="92"
+                                        height="46"
+                                        className={styles.githubLogo}
+                                    />
+                                </a>
+                            </li>
                             <li>
                                 <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
                                     Chat
