@@ -9,10 +9,10 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "Say something about Slovak Telekom...",
-        value: "Say something about Slovak Telekom..."
+        text: "Tell something about Slovak Telekom...",
+        value: "Tell something about Slovak Telekom..."
     },
-    { text: "Who is a Director for Mass Market in Slovak Telekom?", value: "Who is a Director for Mass Market in Slovak Telekom?" },
+    { text: "Who is the Enterprise Segment Director in Slovak Telekom?", value: "Who is the Enterprise Segment Director in Slovak Telekom?" },
     { text: "What is Magio GO?", value: "What is Magio GO?" }
 ];
 

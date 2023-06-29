@@ -12,7 +12,14 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>B2B SK GPT + Enterprise data | Sample</h3>
+                        <h3 className={styles.headerTitle}>
+                        <img
+                            src={telekom}
+                            alt="Telekom Logo"
+                            aria-label="B2B SK Telekom"
+                            width="92"
+                            height="46"
+                        /> B2B SK GPT | Sample</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
