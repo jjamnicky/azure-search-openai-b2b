@@ -1,7 +1,5 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 
-import github from "../../assets/github.svg";
-
 import telekom from "../../assets/T-logo.svg";
 
 import styles from "./Layout.module.css";
@@ -19,21 +17,12 @@ const Layout = () => {
                             aria-label="B2B SK Telekom"
                             width="92"
                             height="46"
-                        /> B2B SK GPT | Sample</h3>
+                        /></h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
                             <li>
-                                <a href="https://moja-firma.telekom.sk/" target={"_blank"} title="B2B SK Telekom link">
-                                    <img
-                                        src={telekom}
-                                        alt="Telekom Logo"
-                                        aria-label="B2B SK Telekom link"
-                                        width="92"
-                                        height="46"
-                                        className={styles.githubLogo}
-                                    />
-                                </a>
+                                <h3 className={styles.headerTitle}> B2B SK GPT | Sample &nbsp;&nbsp;&nbsp;</h3>
                             </li>
                             <li>
                                 <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
@@ -46,13 +35,13 @@ const Layout = () => {
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
+                                <a href="https://moja-firma.telekom.sk/" target={"_blank"} title="B2B SK Telekom link">
                                     <img
-                                        src={github}
-                                        alt="Github logo"
-                                        aria-label="Link to github repository"
-                                        width="20px"
-                                        height="20px"
+                                        src={telekom}
+                                        alt="Telekom Logo"
+                                        aria-label="B2B SK Telekom link"
+                                        width="92"
+                                        height="46"
                                         className={styles.githubLogo}
                                     />
                                 </a>
