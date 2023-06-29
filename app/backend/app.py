@@ -16,9 +16,9 @@ from azure.storage.blob import BlobServiceClient
 # Replace these with your own values, either in environment variables or directly here
 AZURE_STORAGE_ACCOUNT = os.environ.get("AZURE_STORAGE_ACCOUNT") or "mystorageaccount"
 AZURE_STORAGE_CONTAINER = os.environ.get("AZURE_STORAGE_CONTAINER") or "content"
-AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE") or "gptkb"
-AZURE_SEARCH_INDEX = os.environ.get("AZURE_SEARCH_INDEX") or "gptkbindex"
-AZURE_OPENAI_SERVICE = os.environ.get("AZURE_OPENAI_SERVICE") or "myopenai"
+AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE") or "b2bskgpt"
+AZURE_SEARCH_INDEX = os.environ.get("AZURE_SEARCH_INDEX") or "b2bskgptindex"
+AZURE_OPENAI_SERVICE = os.environ.get("AZURE_OPENAI_SERVICE") or "b2bskgpt-openai"
 AZURE_OPENAI_GPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_GPT_DEPLOYMENT") or "davinci"
 AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHATGPT_DEPLOYMENT") or "chat"
 
