@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Checkbox, ChoiceGroup, IChoiceGroupOption, Panel, DefaultButton, Spinner, TextField, SpinButton } from "@fluentui/react";
 
 import styles from "./OneShot.module.css";
+import telekom2 from "../../assets/T_logo2.png";
 
 import { askApi, Approaches, AskResponse, AskRequest } from "../../api";
 import { Answer, AnswerError } from "../../components/Answer";
@@ -133,10 +134,17 @@ const OneShot = () => {
         <div className={styles.oneshotContainer}>
             <div className={styles.oneshotTopSection}>
                 <SettingsButton className={styles.settingsButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
-                <h1 className={styles.oneshotTitle}>Ask your data</h1>
+                <img
+                    src={telekom2}
+                    alt="T-Mobile"
+                    aria-label="T-Mobile"
+                    width="130"
+                    height="120"
+                 />
+                <h2 className={styles.oneshotTitle}>Ask your data</h2>
                 <div className={styles.oneshotQuestionInput}>
                     <QuestionInput
-                        placeholder="Example: Does my plan cover annual eye exams?"
+                        placeholder="Example: How many internal employees worked in Slovak Telekom in 2021"
                         disabled={isLoading}
                         onSend={question => makeApiRequest(question)}
                     />
