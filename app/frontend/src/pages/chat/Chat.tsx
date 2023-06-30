@@ -2,6 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import { Checkbox, Panel, DefaultButton, TextField, SpinButton } from "@fluentui/react";
 import { SparkleFilled } from "@fluentui/react-icons";
 
+import telekom2 from "../../assets/T_logo2.png";
+
 import styles from "./Chat.module.css";
 
 import { chatApi, Approaches, AskResponse, ChatRequest, ChatTurn } from "../../api";
@@ -134,7 +136,13 @@ const Chat = () => {
                 <div className={styles.chatContainer}>
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
-                            <img src="../../assets/T_logo2.png" alt="T-Mobile" width="200" height="200"/>
+                            <img
+                                src={telekom2}
+                                alt="T-Mobile"
+                                aria-label="T-Mobile"
+                                width="200"
+                                height="200"
+                            />
                             <h1 className={styles.chatEmptyStateTitle}>Chat with B2B SK Telekom data</h1>
                             <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
                             <ExampleList onExampleClicked={onExampleClicked} />
