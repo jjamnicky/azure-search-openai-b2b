@@ -15,15 +15,12 @@ const Layout = () => {
                             src={telekom}
                             alt="Telekom Logo"
                             aria-label="B2B SK Telekom"
-                            width="92"
-                            height="46"
-                        /></h3>
+                            width="80"
+                            height="40"
+                        /> Biznis </h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
-                            <li>
-                                <h3 className={styles.headerTitle}> B2B SK GPT | Sample &nbsp;&nbsp;&nbsp;</h3>
-                            </li>
                             <li>
                                 <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
                                     Chat
