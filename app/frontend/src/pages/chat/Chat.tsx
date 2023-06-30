@@ -134,7 +134,7 @@ const Chat = () => {
                 <div className={styles.chatContainer}>
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
-                            <img src="../../assets/T_logo2.png" alt="T-Mobile" width="150" height="150"/>
+                            <img src="../../assets/T_logo2.png" alt="T-Mobile" width="200" height="200"/>
                             <h1 className={styles.chatEmptyStateTitle}>Chat with B2B SK Telekom data</h1>
                             <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
                             <ExampleList onExampleClicked={onExampleClicked} />
