@@ -10,14 +10,14 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h2 className={styles.headerTitle}>
+                        <h1 className={styles.headerTitle}>
                         <img
                             src={telekom}
                             alt="Telekom Logo"
                             aria-label="B2B SK Telekom"
                             width="80"
                             height="40"
-                        />Biznis </h2>
+                        />Biznis </h1>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>

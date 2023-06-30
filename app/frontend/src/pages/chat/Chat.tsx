@@ -140,8 +140,8 @@ const Chat = () => {
                                 src={telekom2}
                                 alt="T-Mobile"
                                 aria-label="T-Mobile"
-                                width="200"
-                                height="200"
+                                width="130"
+                                height="120"
                             />
                             <h1 className={styles.chatEmptyStateTitle}>Chat with B2B SK Telekom data</h1>
                             <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
