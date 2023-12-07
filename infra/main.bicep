@@ -42,8 +42,8 @@ param gptDeploymentCapacity int = 30
 param gptModelName string = 'text-davinci-003'
 param chatGptDeploymentName string = ''
 param chatGptDeploymentCapacity int = 30
-param chatGptModelName string = 'gpt-4-32k'
-//param chatGptModelName string = 'gpt-35-turbo'
+//param chatGptModelName string = 'gpt-4-32k'
+param chatGptModelName string = 'gpt-35-turbo'
 
 @description('Id of the user or app to assign application roles')
 param principalId string = ''
@@ -146,8 +146,8 @@ module openAi 'core/ai/cognitiveservices.bicep' = {
         model: {
           format: 'OpenAI'
           name: chatGptModelName
-          version: '0613'
-          //version: '0301'
+          //version: '0613'
+          version: '0301'
         }
         sku: {
           name: 'Standard'
